@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+	overflow: auto;
+	background: #525252;
+}
+
+.flipbook {
+    width: 1000px;
+    height: 600px;
+    aspect-ratio: 5/3 ;
+}
+
+/* UNTUK SAMPUL */
+.flipbook .sampul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #06007b !important;
+    color: #fff;
+    font-size: 16.5px;
+    border: none; 
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.flipbook .sampul .penerbit {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16.5px;
+    opacity: 0.8;
+}
+/* BATAS SAMPUL */
+
+/* MUSIK */
+.playlistmusik {
+    color: #fff;
+    font-size: 16.5px;
+}
+.musik {
+    width: 50%;
+    height: 50%;
+}
+.playlist {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    size: 5px;
+}
+/* BATAS MUSIK */
+
+/* MUSIK 1 */
+.playlistmusik1 {
+    color: #fff;
+    font-size: 16.5px;
+}
+.musik1 {
+    width: 50%;
+    height: 50%;
+}
+.playlist1 {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    size: 5px;
+}
+/* BATAS MUSIK 1 */
+
+/* HALAMAN 3 */
+.halaman3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text3 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+    text-indent: 30px; /*Buat geser baris pertama ke kanan*/
+}
+.text-3 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman3 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 3 */
+
+/* HALAMAN 4 */
+.halaman4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text4 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+    text-indent: 30px; /*Buat geser baris pertama ke kanan*/
+}
+.nomor-halaman4 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 4 */
+
+/* HALAMAN 5 */
+.halaman5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text5 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text-5 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman5 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 5 */
+
+/* HALAMAN 6 */
+.halaman6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text6 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.nomor-halaman6 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 6 */
+
+/* HALAMAN 7 */
+.halaman7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text7 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+    text-indent: 30px; /*Buat geser baris pertama ke kanan*/
+}
+.text-7 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman7 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 7 */
+
+/* HALAMAN 8 */
+.halaman8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text8 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text-8 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman8 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 8 */
+
+/* HALAMAN 9 */
+.halaman9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text9 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text-9 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman9 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 9 */
+
+/* HALAMAN 10 */
+.halaman10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text10 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.nomor-halaman10 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 10 */
+
+/* HALAMAN 11 */
+.halaman11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text11 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text-11 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman11 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 11 */
+
+/* HALAMAN 12 */
+.halaman12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text12 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text-12 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman12 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 12 */
+
+/* HALAMAN 13 */
+.halaman13 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text13 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text-13 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman13 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 13 */
+
+/* HALAMAN 14 */
+.halaman14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text14 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.nomor-halaman14 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 14 */
+
+/* HALAMAN 16 */
+.halaman16 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text16 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+    text-indent: 30px; /*Buat geser baris pertama ke kanan*/
+}
+.text-16 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman16 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 16 */
+
+/* HALAMAN 17 */
+.halaman17 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text17 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+    text-indent: 30px; /*Buat geser baris pertama ke kanan*/
+}
+.text_17 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman17 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 17 */
+
+/* HALAMAN 18 */
+.halaman18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text18 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text_18 {
+    font-size: 16.5px;
+    display: block;
+    line-height: 1.5;
+}
+.nomor-halaman18 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 18 */
+
+/* HALAMAN 19 */
+.halaman19 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text19 {
+    position: absolute;
+    top: 60px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+    text-indent: 30px; /*Buat geser baris pertama ke kanan*/
+}
+.nomor-halaman19 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 19 */
+
+/* HALAMAN 20 */
+.halaman20 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text20 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+    text-indent: 30px; /*Buat geser baris pertama ke kanan*/
+}
+.text-20 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman20 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 20 */
+
+/* HALAMAN 21 */
+.halaman21 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text21 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.text-21 {
+    font-size: 16.5px;
+    display: block;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+.nomor-halaman21 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 21 */
+
+/* HALAMAN 22 */
+.halaman22 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.text22 {
+    position: absolute;
+    top: 40px;
+    text-align: justify; /*Buat rata kiri kanan*/
+    font-size: 16.5px;
+    line-height: 1.6; /*Buat spasi antar baris*/
+    max-width: 80%;
+}
+.nomor-halaman22 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+/* BATAS HALAMAN 22 */
+
+
+.flipbook .hard small{
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.7;
+	font-size: 16.5px;
+}
+
+/* UNTUK KERTAS PUTIHNYA */
+.flipbook .page {
+    background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+/* BATAS KERTAS PUTIHNYA */
+
+/* UNTUK FOTO 1 & 2 */
+.page img{
+	width: 70%;
+	object-fit: cover;
+	margin: auto;
+}
+/* BATAS FOTO 1 & 2 */
+
+/* UKURAN */
+/* Media Query */
+/* UNTUK LATOP */
+@media (max-width: 1200px) {
+    .flipbook {
+        width: 800px;
+        height: 480px;
+    }
+    .playlistmusik, .text3, .text-3, .text4, .text5,
+    .text-5, .text6, .text7, .text-7, .text8,.text-8, 
+    .text9, .text-9, .text10, .text11, .text-11, .text12,
+    .text-12, .text13, .text-13, .text14, .text16, .text-16,
+    .text17, .text_17, .text18, .text_18, .text19,
+    .text20, .text-20, .text21, .text-21, .text22 {
+        font-size: 16.5px; /* Kurangi ukuran font agar pas */
+        max-width: 90%;
+    }
+    .sampul, .penerbit{
+        font-size: 14px;
+    }
+}
+/* UNTUK TABLET BESAR */
+@media (max-width: 992px) {
+    .flipbook {
+        width: 600px;
+        height: 360px;
+    }
+    .playlistmusik, .text3, .text-3, .text4, .text5,
+    .text-5, .text6, .text7, .text-7, .text8,.text-8, 
+    .text9, .text-9, .text10, .text11, .text-11, .text12,
+    .text-12, .text13, .text-13, .text14, .text16, .text-16,
+    .text17, .text_17, .text18, .text_18, .text19,
+    .text20, .text-20, .text21, .text-21, .text22 {
+        font-size: 14px; /* Kurangi ukuran font agar pas */
+        max-width: 90%;
+    }
+    .sampul .penerbit {
+        font-size: 14px;
+    }
+}
+
+/* UNTUK TABLET */
+@media (max-width: 768px) {
+    .flipbook {
+        width: 500px;
+        height: 400px;
+    }
+    
+    .playlistmusik, .text3, .text-3, .text4, .text5,
+    .text-5, .text6, .text7, .text-7, .text8,.text-8, 
+    .text9, .text-9, .text10, .text11, .text-11, .text12,
+    .text-12, .text13, .text-13, .text14, .text16, .text-16,
+    .text17, .text_17, .text18, .text_18, .text19,
+    .text20, .text-20, .text21, .text-21, .text22 {
+        font-size: 8px; /* Kurangi ukuran font agar pas */
+        max-width: 90%;
+    }
+    .nomor-halaman1, .nomor-halaman2, .nomor-halaman3, 
+    .nomor-halaman4, .nomor-halaman5, .nomor-halaman6, 
+    .nomor-halaman7, .nomor-halaman8, .nomor-halaman9,
+    .nomor-halaman10, .nomor-halaman11, .nomor-halaman12,
+    .nomor-halaman13, .nomor-halaman14, .nomor-halaman16,
+    .nomor-halaman17, .nomor-halaman18, .nomor-halaman19,
+    .nomor-halaman20, .nomor-halaman21, .nomor-halaman22 {
+        font-size: 8px;
+    }
+    .flipbook .sampul {
+        font-size: 8px;
+    }
+    .flipbook .sampul .penerbit {
+        font-size: 8px;
+    }
+}
+
+/* UNTUK HP */
+@media (max-width: 450px) {
+    .flipbook {
+        width: 330px;
+        height: 210px;
+    }
+    
+    .playlistmusik, .text3, .text-3, .text4, .text5,
+    .text-5, .text6, .text7, .text-7, .text8,.text-8, 
+    .text9, .text-9, .text10, .text11, .text-11, .text12,
+    .text-12, .text13, .text-13, .text14, .text16, .text-16,
+    .text17, .text_17, .text18, .text_18, .text19,
+    .text20, .text-20, .text21, .text-21, .text22 {
+        font-size: 6px; /* Kurangi ukuran font agar pas */
+        max-width: 95%;
+        top: 10px;
+    }
+    .nomor-halaman1, .nomor-halaman2, .nomor-halaman3, 
+    .nomor-halaman4, .nomor-halaman5, .nomor-halaman6, 
+    .nomor-halaman7, .nomor-halaman8, .nomor-halaman9,
+    .nomor-halaman10, .nomor-halaman11, .nomor-halaman12,
+    .nomor-halaman13, .nomor-halaman14, .nomor-halaman16,
+    .nomor-halaman17, .nomor-halaman18, .nomor-halaman19,
+    .nomor-halaman20, .nomor-halaman21, .nomor-halaman22 {
+        font-size: 6px;
+    }
+    .flipbook .sampul {
+        font-size: 6px;
+    }
+    .flipbook .sampul .penerbit {
+        font-size: 6px;
+    }
+}
